@@ -1,12 +1,30 @@
 .App {
   text-align: center;
-  background-color: rgb(118, 170, 153);
+  color: rgb(53, 58, 58);
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: rgb(151, 187, 175);
+}
+
+h1 {
+  font-size: 170%;
+  margin-bottom: 15px;
 }
 
 .App-logo {
   height: 40vmin;
 }
 
+img {
+  width: 60%;
+  height: auto;
+}
+
+button {
+  background-color: rgb(167, 119, 212);
+  border: 1px solid rgb(167, 119, 212);
+}
 
 .App-link {
   color: #09d3ac;
