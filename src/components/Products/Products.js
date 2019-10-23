@@ -4,7 +4,7 @@ import Product from './Product/Product';
 const products = props => {
     console.log('Persons.js rendering');
     return props.products.map((product,index) => {
-        console.log(product,index);
+        //console.log(product,index);
         return (
             <Product
                 title={product.title}
@@ -12,6 +12,7 @@ const products = props => {
                 price={product.price}
                 image={product.img}
                 key={product.id}
+                addToBasket={ () => props.addToBasket(index)}
             />
         );
     });
