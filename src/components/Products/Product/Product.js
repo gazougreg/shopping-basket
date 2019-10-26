@@ -1,12 +1,11 @@
 import React from 'react';
 
 const product = props => {
-    console.log('Product.js renedering');
-    //console.log(props);
+    //the product card and add to basket button
     return (
         <div className="Product">
             <img src={props.image}></img>
-            <p>{props.title}</p> 
+            <h3>{props.title}</h3> 
             <p>{props.desc}</p>
             <p>{props.price}€</p>
             <button className="btn-add" onClick={props.addToBasket}>Add to basket</button>

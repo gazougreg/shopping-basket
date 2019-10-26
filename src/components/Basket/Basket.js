@@ -1,14 +1,20 @@
 import React from 'react';
+import BasketProd from './BasketProd/BasketProd';
 
 const basket = props => {
-    console.log('Basket.js render');
-    console.log(props);
-    return props.basket.map((product,index) =>{
+    //the basket 
+    return props.basket.map((product) =>{
         return (
-        <div className="Basket">
-        <p>{product.title}</p>
-        
-    </div>
+            <div>
+                <BasketProd 
+                    title={product.title}
+                    quantity={product.quantity}
+                    totalPrice={product.totalPrice}
+                    increase={ () => props.increase(product.id)}
+                    decrease ={ () => props.decrease(product.id)}
+                    quantityChanger={ (event) => props.quantityChanger(event,product.id)}
+                />
+            </div>
         );
     });
 }

@@ -1,31 +1,88 @@
+
 .App {
   text-align: center;
   color: rgb(53, 58, 58);
   font-family: sans-serif;
   font-weight: 300;
   font-size: 20px;
-  background-color: rgb(151, 187, 175);
+}
+
+.products {
+  background-color: rgba(165, 211, 208, 0.986);
+  margin:0;
+  padding-top: 50px;
+}
+
+.basket {
+  background-color:  rgba(165, 211, 208, 0.835);
+  margin:0;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 h1 {
-  font-size: 170%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: rgb(30, 81, 94);
+  word-spacing: 4px;
+  font-size: 240%;
+  letter-spacing: 1px;
+  
+}
+
+h2 {
+  font-size: 120%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(179, 78, 31);
+}
+
+h3 {
+  font-size: 110%;
   margin-bottom: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
+
 
 img {
-  width: 60%;
+  width: 30%;
   height: auto;
 }
 
 button {
-  background-color: rgb(167, 119, 212);
-  border: 1px solid rgb(167, 119, 212);
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 300;
+  font-size: 90%;
+  text-decoration: none; 
+  border-radius: 200px;
+  color: rgb(53, 58, 58);
 }
 
-.App-link {
-  color: #09d3ac;
+.btn-add {
+  background-color: rgb(165, 122, 201);
+  margin-bottom: 20px;
 }
+
+.btn-dec {
+  background-color: tomato;
+}
+
+.btn-inc {
+  background-color: teal;
+}
+
+.btn-buy {
+  background-color: rgb(15, 136, 136);
+
+}
+
+input[type=text] {
+  width: 5%;
+  padding: 4px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
