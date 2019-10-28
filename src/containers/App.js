@@ -80,7 +80,11 @@ class App extends Component {
     let cost = this.state.finalCost;
     const index = this.state.basket.findIndex(item => item.id === productId);
     let initialQuant = basketNew[index].quantity;
-    basketNew[index].quantity = event.target.value;
+    if(event.target.value != 0) { //if given value != 0 proceed with value changes
+      basketNew[index].quantity = event.target.value;
+    } else { //total delete of quantity is not acceptable
+      alert('The quantity cannot be empty');
+    }
     basketNew[index].totalPrice = basketNew[index].quantity * basketNew[index].price;
     if( initialQuant >= basketNew[index].quantity ){
       cost -= basketNew[index].price * (initialQuant - basketNew[index].quantity );
