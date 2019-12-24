@@ -1,4 +1,4 @@
- # Wellcome to the SOAPing Basket!
+ # Welcome to the SOAPing Basket!
  The application was created with react.
  create-react-app was used.
  jest, enzyme were used for unit testing.
